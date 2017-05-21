@@ -108,8 +108,8 @@ body {
 
 
 .grid {
- -moz-column-width: 12em;
- -webkit-column-width: 12em;
+ 
+ -webkit-columns: 2;
 overflow: hidden;
   
 }
@@ -118,14 +118,15 @@ overflow: hidden;
  margin:  0.25rem;
  padding:  0.25rem;
  width:  100%; 
+
 } 
 
 
 .feed-card{
 	box-shadow: none !important;
 	font-size: 0.7em !important;
-		width: 180px !important;
-
+	width: 180px !important;
+	left : 20%;
 }
 
 .feed-card .card-image img{
@@ -136,8 +137,9 @@ overflow: hidden;
 	font-size: 1.3em !important;
 }
 
-.feed-card .card{
+.feed-card {
 	margin-top: 0px !important;
+	margin-right: 0px !important;
 	height: auto !important;
 }
 .feed-card .card-content{
@@ -165,6 +167,8 @@ overflow: hidden;
 
 .intro-card .card-content span{
 	margin-bottom: 0.9em !important;
+	letter-spacing: 2px !important;
+		font-size: 1.5em !important;
 
 }
 
@@ -180,7 +184,12 @@ overflow: hidden;
 
 }
 
-
+@media only screen and (min-width: 768px){
+	.intro-card .card-content span{
+		letter-spacing: 2px !important;
+		font-size: 1.5em !important;
+	}
+}
 
 
 

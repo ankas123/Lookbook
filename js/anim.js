@@ -1,12 +1,15 @@
-var access_token = 'EAACEdEose0cBACwBJjOTZC4uEmLaLVZCZAzEvr4W5W10Poj1lIo6CauvXZBjm23UjfxFp78EJ39lC3Eqllaa4zl93EWhLzHvY2HewjrDQX3L9eGUboeZCFCIJbVL33VRveZBFRSFJAQ4JZAlK4V6E6Tf2HJLbbqDXw7kYWbZA2JnMfZBTudNf2T6mwTntIFZCe5cgZD';
+var access_token ;
 var isValid = false;
 var page = 0;
 var gotFeed = false; 
+
+var width 
+var height 
 function place(flipbookChange){
 	
 		$('.modal').modal();
 
-		$(".position-book").css("margin-left", ($(window).width() - 1000)/2);
+		$(".position-book").css("margin-left", ($(window).width() - width)/2);
 		
 		if( flipbookChange == true && gotFeed == true){
 			initFlipbook();
@@ -143,8 +146,8 @@ function addCover(){
 
 function initFlipbook(){
 	$("#flipbook").turn({
-		width: 1000,
-		height: 650,
+		width: width,
+		height: height,
 		autoCenter: true
 		});	
 }
@@ -157,13 +160,50 @@ function finishSetup(){
 
 }
 
+function booksize(){
+	var min 
+	var qout = 0.95
+	
+	if($(window).width() > 1440){
+		qout = 0.5
+	}
+	else if ($(window).width() > 1300){
+		qout = 0.88
+	}
+	else if ($(window).width() > 1000){
+		qout = 0.87
+	}
+	else if($(window).width() > 900 && $(window).height() < 1000)
+	{
+		qout = 0.7
+	} 
+
+	console.log($(window).height() )
+	if ( $(window).width() > $(window).height())
+		{
+			min = $(window).height() * qout
+			width = min * 8 / 5
+			height = min
+	}
+	else {
+			min = $(window).width() * qout
+			width = min 
+			height = min * 5 / 8
+	}
+
+}
+
 $(document).ready(function() {
-			place(true);
+			booksize();
+
+			place();
+			
 			$('#modal1').modal('open');
 			
 		});
 
 $(window).resize(function(){
+		booksize();
 		place();
 
 })
