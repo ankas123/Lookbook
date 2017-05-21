@@ -147,8 +147,6 @@ overflow: hidden;
 /*     Cover       */
 
 .cover{
-	background:url('../images/back-cover.jpg')  center no-repeat;
-	background-size: cover;
 	height: 100%;
 }
 .intro-card{
