@@ -165,7 +165,7 @@ function booksize(){
 	var qout = 0.95
 	
 	if($(window).width() > 1440){
-		qout = 0.5
+		qout = 0.7
 	}
 	else if ($(window).width() > 1300){
 		qout = 0.88

@@ -121,7 +121,6 @@ overflow: hidden;
 
 } 
 
-
 .feed-card{
 	box-shadow: none !important;
 	font-size: 0.7em !important;
@@ -168,7 +167,7 @@ overflow: hidden;
 .intro-card .card-content span{
 	margin-bottom: 0.9em !important;
 	letter-spacing: 2px !important;
-		font-size: 1.5em !important;
+	font-size: 1.5em !important;
 
 }
 
@@ -198,13 +197,14 @@ overflow: hidden;
 /*     Modal   */
 
 .modal{
-	width:40% !important;
-	height:60% !important;
+	width:70% !important;
+	height:auto !important;
 	background:linear-gradient(
       rgba(40,57,101,.9), 
       rgba(40,57,101,.9)
     ), url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg)	center no-repeat;
 	background-size: cover;
+	font-size: 1em;
 }
 
 
@@ -241,7 +241,7 @@ overflow: hidden;
 	text-align: center;
 }
 .login-html .tab{
-	font-size:22px;
+	font-size:2em;
 	margin-right:15px;
 	padding-bottom:5px;
 	margin:0 15px 40px 0;
@@ -282,11 +282,11 @@ overflow: hidden;
 	background:rgba(255,255,255,.1);
 }
 .login-form .group .input{
-	height: 20px !important;
+	height: 40px !important;
 }
 .login-form .group .label{
 	color:#aaa;
-	font-size:12px;
+	font-size:1vmin;
 }
 .login-form .group .button{
 	background:#1161ee;
@@ -308,6 +308,62 @@ overflow: hidden;
 }
 .foot-lnk{
 	text-align:center;
+	margin-bottom: 20%;
+}
+
+@media (min-width: 1441px) {
+	.intro-card .card-content span{
+	margin-bottom: 0.9em !important;
+	letter-spacing: 4px !important;
+}
+	.intro-card{
+	float: right;	
+ 	width: 30%;
+ 	font-size: 1em;
+}
+.modal{
+	width:30% !important;
+	font-size: 1.4em;
+	}
+
+	.login-form .group .input{
+	height: 40px !important;
+	}
+}
+
+@media  (min-width: 1281px)  and (max-width: 1440px) {
+.modal{
+	width:40% !important;
+	font-size: .9em;
+	}
+
+	.login-form .group .input{
+	height: 30px !important;
+	}
+}
+
+
+@media (max-width: 1280px) and (min-width: 769px) {
+.modal{
+	width:40% !important;
+	
+	font-size: .78em;
+	}
+
+	.login-form .group .input{
+	height: 30px !important;
+	}
+}
+@media (max-width: 768px) and (min-width: 425px) {
+	.modal{
+	width:50% !important;
+	
+	font-size: 0.7em;
+	}
+
+	.login-form .group .input{
+	height: 30px !important;
+	}
 }
 /* Wrapper and figures */
 
