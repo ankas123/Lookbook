@@ -1,0 +1,550 @@
+@font-face {
+	font-family: 'icons';
+	src:url('../fonts/icons/icons.eot');
+	src:url('../fonts/icons/icons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icons/icons.woff') format('woff'),
+		url('../fonts/icons/icons.ttf') format('truetype'),
+		url('../fonts/icons/icons.svg#icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../font/font.otf);
+}
+
+body {
+	background:url('../images/back.jpg') center center;
+	background-size: cover;
+	overflow: hidden;
+	font-size: 14px;
+	margin: 0;
+	overflow-y: hidden; 
+
+}
+
+.place{
+	position: absolute;
+	left: -50px;
+	visibility: hidden;
+}
+
+#header {
+	width: 100%;
+	position: fixed;
+	background: #465772;
+	height: 70px;
+	font-size: 13px;
+	z-index: 200;
+}
+#header_wrap {
+	margin: 0 auto;
+	padding: 10px 15px 10px 25px;
+	width: 916px;
+	display: block;
+	overflow: auto;
+}
+
+#subheader {
+	width: 100%;
+	padding-top: 50%;
+	background: #61b6fe;
+	font-size: 13px;
+	color: #ffffff;
+}
+#subheader_wrap {
+	margin: 0 auto;
+	padding: 20px;
+	width: 916px;
+	overflow: hidden;	
+}
+
+#subheader_wrap a {
+	color: #ffffff;
+	text-decoration: none;
+}
+#icon_border {
+	margin: 0px auto -150px auto;
+	padding: 1px;
+	width: 180px;
+	height: 180px;
+	background: #5cadf1;
+	border: #5cadf1 10px solid;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	-o-border-radius: 150px;
+}
+
+
+
+#icon_wrap {
+	margin: -85px auto 0px auto;
+	padding: 20px;
+
+	overflow: hidden;	
+}
+#icon {
+	margin: 0 auto;
+	width: 170px;
+	height: 170px;
+	overflow: hidden;
+	background: url('../images/web3.jpeg') bottom center no-repeat;
+	border: #ECECEC 10px solid;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	-o-border-radius: 150px;
+		
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+#icon_link {
+	width: 170px;
+	height: 170px;
+}
+
+
+.grid {
+ -moz-column-width: 12em;
+ -webkit-column-width: 12em;
+overflow: hidden;
+  
+}
+.grid-item{
+ display: inline-block;
+ margin:  0.25rem;
+ padding:  0.25rem;
+ width:  100%; 
+} 
+
+
+.feed-card{
+	box-shadow: none !important;
+	font-size: 0.7em !important;
+		width: 180px !important;
+
+}
+
+.feed-card .card-image img{
+	height: 180px !important;
+	width:  180px !important;
+}
+.feed-card span{
+	font-size: 1.3em !important;
+}
+
+.feed-card .card{
+	margin-top: 0px !important;
+	height: auto !important;
+}
+.feed-card .card-content{
+	padding-bottom: 0px !important;
+}
+
+/*     Cover       */
+
+.cover{
+	background:url('../images/back-cover.jpg')  center no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+.intro-card{
+	float: right;	
+	margin-top: 0 !important;
+	margin-right: 5% !important;
+	background-color: white !important;
+ 	width: 35%;
+ 	font-size: 0.7em;
+}
+
+
+.intro-card .card-content {
+	text-align: center;
+}
+
+.intro-card .card-content span{
+	margin-bottom: 0.9em !important;
+
+}
+
+
+.name{
+	margin-top: 40%;
+	padding-top: 10%;
+	font-family: myFirstFont;
+	letter-spacing: 3px;
+	margin-left: 5%;
+	margin-right: 5%;
+	word-wrap: break-word;
+
+}
+
+
+
+
+
+
+
+/*     Modal   */
+
+.modal{
+	width:40% !important;
+	height:60% !important;
+	background:linear-gradient(
+      rgba(40,57,101,.9), 
+      rgba(40,57,101,.9)
+    ), url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg)	center no-repeat;
+	background-size: cover;
+}
+
+
+
+.modal-content{
+	padding: 0px !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+.login-wrap{
+	width:100%;
+	margin:auto;
+	height: 100%;
+ 
+	position:relative;
+	
+}
+.login-html{
+	width:100%;
+	height:100%;
+	position:relative;
+	padding:20% 10% 0% 15%;
+	
+}
+
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+	display:none;
+}
+.login-html .tab,
+{
+	width: 100%;
+	text-align: center;
+}
+.login-html .tab{
+	font-size:22px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 40px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.login-html .tab,
+.login-html .tab{
+	color:#fff;
+	border-color:#1161ee;
+}
+.login-form{
+	position:relative;
+	-webkit-perspective:1000px;
+	        perspective:1000px;
+	-webkit-transform-style:preserve-3d;
+	        transform-style:preserve-3d;
+}
+.login-form .group{
+	margin-bottom:15px;
+}
+.login-form .group .label,
+.login-form .group .button{
+	width:100%;
+	color:#fff;
+	display:block;
+}
+
+.login-form .group .input{
+	color:#fff;
+	box-sizing : border-box;
+}
+.login-form .group .input,
+.login-form .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group .input{
+	height: 20px !important;
+}
+.login-form .group .label{
+	color:#aaa;
+	font-size:12px;
+}
+.login-form .group .button{
+	background:#1161ee;
+}
+.login-form .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,.1);
+}
+
+
+.hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+	text-align:center;
+}
+/* Wrapper and figures */
+
+/* The size of this wrapper can be smaller if the items should not be scattered across the whole container */ 
+
+.photostack {
+	position: relative;
+	text-align: center;
+	top: 0px !important;
+	bottom : 0px !important;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+
+.photostack-start {
+	position: absolute;
+	width: 100%;
+	overflow-x: ; 
+}
+.photostack > div {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.photostack .figure {
+	width: 20em;
+	height: 16em;
+	position: relative;
+	display: inline-block;
+	background: #fff;
+	padding: 40px;
+	text-align: center;
+	margin: 5px;
+	box-sizing: content-box !important;
+
+}
+
+.js .photostack .figure {
+	position: absolute;
+	display: block;
+	margin: 0;
+}
+
+.photostack .figcaption h2 {
+	margin: 20px 0 0 0;
+	color: #a7a0a2;
+	font-size: 16px;
+}
+
+.photostack-img {
+	outline: none;
+	display: block;
+	width: 20em;
+	height: 15em;
+	background: #f9f9f9;
+}
+
+.photostack-img img{
+	width:20em;
+	height:15em;	
+	
+}
+
+.photostack-back {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #fff;
+	font-family: "Give You Glory", cursive;
+	color: #a7a0a2;
+	padding: 50px 40px;
+	text-align: left;
+	font-size: 22px;
+	line-height: 1.25;
+	z-index: 1;
+}
+
+.photostack-back p {
+	margin: 0;
+}
+
+.photostack-back p span {
+	text-decoration: line-through;
+}
+
+/* Navigation dots */
+.photostack nav {
+	position: absolute;
+	width: 100%;
+	bottom: 30px;
+	z-index: 90;
+	text-align: center;
+	left: 0;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.photostack-start nav {
+	opacity: 0;
+}
+ 
+.photostack nav span {
+	position: relative;
+	display: inline-block;
+	margin: 0 5px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background: #aaa;
+	border-radius: 50%;
+	text-align: center;
+	-webkit-transition: -webkit-transform 0.6s ease-in-out, background 0.3s;
+	transition: transform 0.6s ease-in-out, background 0.3s;
+	-webkit-transform: scale(0.48);
+	transform: scale(0.48);
+}
+
+.photostack nav span:last-child {
+	margin-right: 0;
+}
+
+.photostack nav span::after {
+	content: "\e600";
+	font-family: 'icons';
+	font-size: 80%;
+	speak: none;
+	display: inline-block;
+	vertical-align: top;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 30px;
+	color: #fff;
+	opacity: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.photostack nav span.current {
+	background: #888;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.photostack nav span.current.flip {
+	-webkit-transform: scale(1) rotateY(-180deg) translateZ(-1px);
+	transform: scale(1) rotateY(-180deg) translateZ(-1px);
+	background: #555;
+}
+
+.photostack nav span.flippable::after {
+	opacity: 1;
+	-webkit-transition-delay: 0.4s;
+	transition-delay: 0.4s;
+}
+
+/* Overlays */
+
+/* Initial overlay on photostack container */
+
+
+/* Overlay on figure */
+
+
+/* Hide figure overlay when it becomes current */
+figure.photostack-current::after {
+	-webkit-transition: opacity 0.6s, visibility 0s 0.6s;
+	transition: opacity 0.6s, visibility 0s 0.6s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+/* Special classes for transitions and perspective */
+.photostack-transition .figure {
+	-webkit-transition: -webkit-transform 0.6s ease-in-out;
+	transition: transform 0.6s ease-in-out;
+}
+
+.photostack-perspective {
+	-webkit-perspective: 1800px;
+	perspective: 1800px;
+}
+
+.photostack-perspective > div,
+.photostack-perspective .figure {
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.photostack-perspective .figure,
+.photostack-perspective .figure div {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.photostack-perspective .figure.photostack-flip {
+	-webkit-transform-origin: 0% 50%;
+	transform-origin: 0% 50%;
+}
+
+.csstransformspreserve3d .figure.photostack-flip .photostack-back {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	display: block;
+}
+
+.no-csstransformspreserve3d .figure.photostack-showback .photostack-back {
+	display: block;
+}
+
+/* The no-JS fallback look does not need to be boring ;) */
+.no-js .photostack .figure {
+	box-shadow: -2px 2px 0 rgba(0,0,0,0.05);
+}
+
+.no-js .photostack .figure::after {
+	display: none;
+}
+
+.no-js .photostack .figure:nth-child(3n) {
+	-webkit-transform: translateX(-10%) rotate(5deg);
+	transform: translateX(-10%) rotate(5deg);
+}
+
+.no-js .photostack .figure:nth-child(3n-2) {
+	-webkit-transform: translateY(10%) rotate(-3deg);
+	transform: translateY(10%) rotate(-3deg);
+}
+
+/* Some custom styles for the demo */
+
+/* Since we don't have back sides for the first photo stack, we don't want the current dot to become too big */
+#photostack-1 nav span.current {
+	background: #888;
+	-webkit-transform: scale(0.61);
+	transform: scale(0.61);
+}
