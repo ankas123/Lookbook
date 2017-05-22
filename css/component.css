@@ -312,15 +312,15 @@ overflow: hidden;
 }
 
 @media (min-width: 1441px) {
-	.intro-card .card-content span{
-	margin-bottom: 0.9em !important;
-	letter-spacing: 4px !important;
-}
-	.intro-card{
-	float: right;	
- 	width: 30%;
- 	font-size: 1em;
-}
+		.intro-card .card-content span{
+		margin-bottom: 0.9em !important;
+		letter-spacing: 4px !important;
+	}
+		.intro-card{
+		float: right;	
+	 	width: 30%;
+	 	font-size: 1em;
+	}
 .modal{
 	width:30% !important;
 	font-size: 1.4em;
@@ -331,7 +331,17 @@ overflow: hidden;
 	}
 }
 
-@media  (min-width: 1281px)  and (max-width: 1440px) {
+@media  (max-width: 1440px) and (min-width: 1281px)  {
+	.intro-card .card-content span{
+		margin-bottom: 0.9em !important;
+		letter-spacing: 4px !important;
+		line-height: 1.2em !important;
+	}
+		.intro-card{
+		float: right;	
+	 	width: 35%;
+	 	font-size: 0.8em;
+	}
 .modal{
 	width:40% !important;
 	font-size: .9em;
@@ -344,6 +354,16 @@ overflow: hidden;
 
 
 @media (max-width: 1280px) and (min-width: 769px) {
+	.intro-card .card-content span{
+		margin-bottom: 0.9em !important;
+		letter-spacing: 2px !important;
+		line-height: 1.2em !important;
+	}
+		.intro-card{
+		float: right;	
+	 	width: 35%;
+	 	font-size: 0.6em;
+	}
 .modal{
 	width:40% !important;
 	
@@ -355,6 +375,17 @@ overflow: hidden;
 	}
 }
 @media (max-width: 768px) and (min-width: 425px) {
+		.intro-card .card-content span{
+		margin-bottom: 0.9em !important;
+		letter-spacing: 2px !important;
+		line-height: normal !important;
+	}
+		.intro-card{
+		float: right;	
+	 	width: 35%;
+	 	font-size: 0.4em;
+	}
+
 	.modal{
 	width:50% !important;
 	

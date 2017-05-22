@@ -1,4 +1,4 @@
-var access_token ;
+var access_token = 'EAACEdEose0cBAP5bvgPu5xL1199LSfBfWiXXtAFiRmMAaaHAR3bypLgDY6YIgJhW9qz54ge0a6evkjql1VneLraG3cJ0k5UbKt6SeY1ChO4pQ6Dq2BMSnGXLF2ZCOaZCfERm2f8ZC00Rn6hIU3H77LftiQ69FzprQo28RqzdHN7ZAfZCDHNs1WrRpZAnnJOIAZD';
 var isValid = false;
 var page = 0;
 var gotFeed = false; 
@@ -48,9 +48,9 @@ function getData(){
 }
 
 function getAccessToken(){
-	access_token = $('#access_token').val();
+	//access_token = $('#access_token').val();
 	isValid = true;
-	$('#loader').css("visibility","visible");
+	//$('#loader').css("visibility","visible");
 			addCover();
 			getData();
 			getFeed();
@@ -163,9 +163,9 @@ function finishSetup(){
 function booksize(){
 	var min 
 	var qout = 0.95
-	
+	var allowedwidth = $('').width()
 	if($(window).width() > 1440){
-		qout = 0.7
+		qout = 0.6
 	}
 	else if ($(window).width() > 1300){
 		qout = 0.88
@@ -173,32 +173,36 @@ function booksize(){
 	else if ($(window).width() > 1000){
 		qout = 0.87
 	}
-	else if($(window).width() > 900 && $(window).height() < 1000)
+	else if($(window).width() > 600 && $(window).height() < 650)
 	{
-		qout = 0.7
+		qout = 0.8
+		if ($(window).width() < 769 && $(window).width() > 650 )
+			qout = 0.8 * 0.78
 	} 
+	
 
 	console.log($(window).height() )
 	if ( $(window).width() > $(window).height())
 		{
-			min = $(window).height() * qout
+			min = $(window).height() * qout 
 			width = min * 8 / 5
 			height = min
 	}
 	else {
-			min = $(window).width() * qout
+			min = $(window).width() * qout 
 			width = min 
 			height = min * 5 / 8
 	}
-
+	console.log(height)
+	console.log(width)
 }
 
 $(document).ready(function() {
 			booksize();
 
-			place();
-			
-			$('#modal1').modal('open');
+			place(true);
+			getAccessToken();
+			//$('#modal1').modal('open');
 			
 		});
 
