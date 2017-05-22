@@ -1,4 +1,4 @@
-var access_token = 'EAACEdEose0cBAP5bvgPu5xL1199LSfBfWiXXtAFiRmMAaaHAR3bypLgDY6YIgJhW9qz54ge0a6evkjql1VneLraG3cJ0k5UbKt6SeY1ChO4pQ6Dq2BMSnGXLF2ZCOaZCfERm2f8ZC00Rn6hIU3H77LftiQ69FzprQo28RqzdHN7ZAfZCDHNs1WrRpZAnnJOIAZD';
+var access_token ;
 var isValid = false;
 var page = 0;
 var gotFeed = false; 
